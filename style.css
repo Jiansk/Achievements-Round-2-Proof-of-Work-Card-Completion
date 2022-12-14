@@ -1,0 +1,207 @@
+body {
+
+    /* add background colour */
+    background: linear-gradient(#3f87a6, #ebf8e1, #c99155);;
+  
+    /* Resize page */
+    margin: 0;
+    min-height: 100vh;
+  
+    /* Font */
+    font-family: 'Quicksand', sans-serif;
+  }
+  /* Navbar */
+  
+  header{
+      background-color:#FFBB0D;
+  }
+  
+  li {
+      list-style-type: none;
+  }
+  
+  a{
+      color: black;
+      text-decoration: none;
+      font-size: x-large
+  }
+  
+  .navbar{
+      min-height: 75px;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      padding:0 20px;
+  }
+   .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      gap: 60px;
+   }
+  
+   .nav-branding{
+      font-size: 2rem;
+   }
+  
+   .nav-link{
+      transition: 0.7s ease;
+   }
+  
+   .nav-link:hover{
+      color:white;
+   }
+  
+   .hamburger{
+      display: none;
+      cursor: pointer;
+   }
+  
+   .bar{
+      display: block;
+  
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      
+      background-color: white;
+   }
+  
+   @media(max-width:900px){
+      .hamburger{
+          display:block;
+      }
+  
+      .nav-menu{
+          position: fixed;
+          flex-direction: column;
+          text-align: center;
+  
+          left: -100%;
+          top: 70px;
+          gap: 0;
+          width: 100%;
+         
+          background-color: #2b1d5a;
+          
+          transition: 0.3s;
+      }
+  
+      .nav-item{
+          margin: 20px 0;
+      }
+  
+      .nav-menu.active{
+          left: 0;
+      }
+   }
+  
+    main {
+    /* Center content */
+    justify-content: center;
+    align-items: center;
+  
+    /* Alight cards horizontally with gap */
+    margin: 2rem 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  main a {
+    text-decoration: none;
+  
+    margin: 0;
+  
+  }
+  
+  a:hover h2 {
+    /* hover affect and colours
+    change for card title */
+    background-color: #10A19D;
+    color: rgb(0, 0, 0);
+  }
+  
+  a:hover figcaption {
+    /* hoveer affect and colour 
+    change for description in the cards */
+    color: rgba(24, 20, 137, 0.837);
+  }
+  
+  a:hover figure {
+    /* hoveer affect and colour 
+    change for card itself */
+    background-color: #ffffff;
+  }
+  h2 {
+    /* center and distance title of cards */
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  /* changed font size and colour */
+  font-size: 30px;
+  color: rgba(24, 20, 137, 0.837);
+  background-color: #f5f5f5;
+  transition: 0.5s ease;
+  }
+  
+  figure {
+    /* Size cards */
+    max-width: 50ch;
+    height: 55ch;
+    margin: 0;
+  /* border and box shadow around the cards */
+    /* border: 1px solid black; */
+    box-shadow: 0 1px 1px rgb(0, 0, 0, .2),0 2px 2px rgb(0, 0, 0, .2),0 4px 4px rgb(0, 0, 0, .2),0 8px 8px rgb(0, 0, 0, .2);
+    background-color: #10A19D;
+    transition: 0.5s ease;
+  }
+  
+  figure img {
+    /* resize the image to be equal dimensions */
+    display: block;
+    width: 49ch;
+    height: 40ch;
+  }
+  
+  figcaption {
+    margin: 0;
+    padding: 20px;
+    /* to align card description */
+    text-align: start;
+    font-size: 25px;
+  }
+  
+  /* footer */
+  
+  footer li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+  
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer {
+    background-color: #282b71;
+    color: #9f97c5;
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFBB0D;
+    color: white;
+    font-size: larger;
+    font-family: 'Bebas Neue', serif, cursive;
+  }
